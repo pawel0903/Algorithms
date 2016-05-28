@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Tests.Searching.Structures;
+using Tests.TestStructures;
 
 namespace Tests.Searching
 {

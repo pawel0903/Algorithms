@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Tests.Searching.Structures;
 using System.Collections.Generic;
+using Tests.TestStructures;
 
 namespace Tests.Searching
 {
