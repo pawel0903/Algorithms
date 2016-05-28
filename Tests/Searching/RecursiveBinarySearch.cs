@@ -1,12 +1,13 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using Tests.TestStructures;
-using static Algorithms.Search.LinearSearch;
+using static Algorithms.Search.RecursiveBinarySearch;
 
 namespace Tests.Searching
 {
     [TestClass]
-    public class LinearSearch
+    public class RecursiveBinarySearch
     {
         /// <summary>
         /// Checks if algorithm finds index properly
@@ -18,10 +19,12 @@ namespace Tests.Searching
 
             foreach (int value in values)
             {
-                Assert.AreEqual(value, values[Search(values, value)]);
+                Assert.AreEqual(value, values[Search(values, value, 0, values.Length - 1)]);
             }
 
-            Assert.AreEqual(-1, Search<int>(values, 55));
+            Assert.AreEqual(-1, Search(values, 55, 0, values.Length - 1));
+            Assert.AreEqual(-1, Search(values, 0, 0, values.Length - 1));
+            Assert.AreEqual(-1, Search(values, 376, 0, values.Length - 1));
         }
 
         /// <summary>
@@ -30,11 +33,11 @@ namespace Tests.Searching
         [TestMethod]
         public void EmptyArrayTest()
         {
-            Assert.AreEqual(-1, Search(new int[] { }, 55));
+            Assert.AreEqual(-1, Search(new int[] { }, 55, 0, (new int[] { }).Length - 1));
         }
 
         /// <summary>
-        /// Checks if algorithm is O(n) time complexity
+        /// Checks if algorithm is O(logn) time complexity
         /// </summary>
         [TestMethod]
         public void TimeComplexityTest()
@@ -46,8 +49,8 @@ namespace Tests.Searching
             }
             Item<int>[] values = list.ToArray();
 
-            Search(values, new Item<int>(16));
-            Assert.IsTrue(Item<int>.TimeComplexity(values) <= values.Length);
+            Search(values, new Item<int>(24), 0, values.Length - 1);
+            Assert.IsTrue(Item<int>.TimeComplexity(values) <= Math.Log(values.Length, 2) + 1);
         }
     }
 }
