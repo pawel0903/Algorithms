@@ -2,18 +2,18 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using Tests.TestStructures;
-using static Algorithms.Search.RecursiveBinarySearch;
+using static Algorithms.Search.IterativeBinarySearch;
 
 namespace Tests.Searching
 {
     [TestClass]
-    public class RecursiveBinarySearch
+    public class IterativeBinarySearch
     {
         /// <summary>
         /// Checks if algorithm finds index properly
         /// </summary>
         [TestMethod]
-        public void RecursiveBinarySearchBasicTest()
+        public void IterativeBinarySearchBasicTest()
         {
             int[] values = { 1, 2, 3, 8, 23, 74, 107, 342 };
 
@@ -31,7 +31,7 @@ namespace Tests.Searching
         /// Checks if algorithm return -1 if array is empty
         /// </summary>
         [TestMethod]
-        public void RecursiveBinarySearchEmptyArrayTest()
+        public void IterativeBinarySearchEmptyArrayTest()
         {
             Assert.AreEqual(-1, Search(new int[] { }, 55, 0, (new int[] { }).Length - 1));
         }
@@ -40,7 +40,7 @@ namespace Tests.Searching
         /// Checks if algorithm is O(logn) time complexity
         /// </summary>
         [TestMethod]
-        public void RecursiveBinarySearchTimeComplexityTest()
+        public void IterativeBinarySearchTimeComplexityTest()
         {
             List<Item<int>> list = new List<Item<int>>();
             for (int i = 0; i < 16; i++)

@@ -12,7 +12,7 @@ namespace Tests.Searching
         /// Checks if algorithm finds index properly
         /// </summary>
         [TestMethod]
-        public void BasicTest()
+        public void LinearSearchBasicTest()
         {
             int[] values = { 1, 2, 3, 8, 23, 74, 107, 342 };
 
@@ -28,7 +28,7 @@ namespace Tests.Searching
         /// Checks if algorithm return -1 if array is empty
         /// </summary>
         [TestMethod]
-        public void EmptyArrayTest()
+        public void LinearSearchEmptyArrayTest()
         {
             Assert.AreEqual(-1, Search(new int[] { }, 55));
         }
@@ -37,7 +37,7 @@ namespace Tests.Searching
         /// Checks if algorithm is O(n) time complexity
         /// </summary>
         [TestMethod]
-        public void TimeComplexityTest()
+        public void LinearSearchTimeComplexityTest()
         {
             List<Item<int>> list = new List<Item<int>>();
             for (int i = 0; i < 16; i++)
