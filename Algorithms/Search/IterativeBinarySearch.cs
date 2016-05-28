@@ -5,7 +5,7 @@ namespace Algorithms.Search
     public static class IterativeBinarySearch
     {
         /// <summary>
-        /// Recursive binary search
+        /// Iterative binary search
         /// Time complexity = O(logn)
         /// </summary>
         /// <typeparam name="T">Type - must implement IComparable<T></typeparam>
