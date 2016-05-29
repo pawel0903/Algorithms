@@ -1,5 +1,5 @@
 ﻿using System;
-using Algorithms.Common;
+using static Algorithms.Common.Utils;
 
 namespace Algorithms.Sorting
 {
@@ -22,7 +22,7 @@ namespace Algorithms.Sorting
                     if (array[j].CompareTo(array[min]) < 0)
                         min = j;
                 }
-                Utils.Swap(ref array[i], ref array[min]);
+                Swap(ref array[i], ref array[min]);
             }
         }
     }
