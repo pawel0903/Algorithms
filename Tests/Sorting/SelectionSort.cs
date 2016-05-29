@@ -13,7 +13,7 @@ namespace Tests.Sorting
         {
             int[] ints = { 10, 45, 15, 39, 21, 26 };
             int[] copy = ints.Clone() as int[];
-            ints.Sort();
+            ints.SelectionSort();
             Array.Sort(copy);
 
             for (int i = 0; i < ints.Length; i++)

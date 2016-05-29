@@ -3,7 +3,7 @@ using Algorithms.Common;
 
 namespace Algorithms.Sorting
 {
-    public static class SelectionSort
+    public static partial class Sorting
     {
         /// <summary>
         /// Selection sort
@@ -12,7 +12,7 @@ namespace Algorithms.Sorting
         /// </summary>
         /// <typeparam name="T">Type - must implement IComparable<T></typeparam>
         /// <param name="array">Collection to be sorted</param>
-        public static void Sort<T>(this T[] array) where T : IComparable<T>
+        public static void SelectionSort<T>(this T[] array) where T : IComparable<T>
         {
             for (int i = 0; i < array.Length; i++)
             {
