@@ -67,6 +67,5 @@ int main()
 	}
 
 	cout << search(cookiesCost, ingredients, k, n) << endl;
-	cin >> tmp;
 	return 0;
 }
