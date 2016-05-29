@@ -56,6 +56,7 @@
     <Compile Include="Searching\LinearSearch.cs" />
     <Compile Include="Searching\IterativeBinarySearch.cs" />
     <Compile Include="Searching\RecursiveBinarySearch.cs" />
+    <Compile Include="Sorting\InsertionSort.cs" />
     <Compile Include="Sorting\SelectionSort.cs" />
     <Compile Include="Sorting\BubbleSort.cs" />
     <Compile Include="TestStructures\Item.cs" />
