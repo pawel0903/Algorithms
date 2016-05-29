@@ -9,13 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeForces", "CodeForces", "{77B1656D-B1D8-431E-A9AA-FBBF91DA8768}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "670D1 - Magic Powder - 1", "670D1 - Magic Powder - 1\670D1 - Magic Powder - 1.vcxproj", "{78342710-E355-41CF-8722-893252A950D5}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "670D1 - Magic Powder - 1", "CodeForces\670D1 - Magic Powder - 1\670D1 - Magic Powder - 1.vcxproj", "{78342710-E355-41CF-8722-893252A950D5}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "670D2 - Magic Powder - 2", "670D2 - Magic Powder - 2\670D2 - Magic Powder - 2.vcxproj", "{4C718E28-0765-43A2-B600-21BEEBE4565B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "670D2 - Magic Powder - 2", "CodeForces\670D2 - Magic Powder - 2\670D2 - Magic Powder - 2.vcxproj", "{4C718E28-0765-43A2-B600-21BEEBE4565B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "670A - Holidays", "670A - Holidays\670A - Holidays.vcxproj", "{BF68FEBB-0F77-4C2D-845D-70BBC105C52C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "670A - Holidays", "CodeForces\670A - Holidays\670A - Holidays.vcxproj", "{BF68FEBB-0F77-4C2D-845D-70BBC105C52C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "670B - Game of Robots", "670B - Game of Robots\670B - Game of Robots.vcxproj", "{30AF625E-54CB-4562-AECE-B4A2410C79C4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "670B - Game of Robots", "CodeForces\670B - Game of Robots\670B - Game of Robots.vcxproj", "{30AF625E-54CB-4562-AECE-B4A2410C79C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
