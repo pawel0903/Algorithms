@@ -1,26 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Algorithms.Common;
 
 namespace Algorithms.Sorting
 {
     public static class SelectionSort
     {
-        /// <summary>
-        /// Swap helper function
-        /// </summary>
-        /// <typeparam name="T">Type</typeparam>
-        /// <param name="left">first argument</param>
-        /// <param name="right">second argument</param>
-        private static void Swap<T>(ref T left, ref T right)
-        {
-            T tmp = left;
-            left = right;
-            right = tmp;
-        }
-
         /// <summary>
         /// Selection sort
         /// Time Complexity: O(n^2)
@@ -38,7 +22,7 @@ namespace Algorithms.Sorting
                     if (array[j].CompareTo(array[min]) < 0)
                         min = j;
                 }
-                Swap(ref array[i], ref array[min]);
+                Utils.Swap(ref array[i], ref array[min]);
             }
         }
     }
