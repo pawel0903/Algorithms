@@ -17,6 +17,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "670A - Holidays", "CodeForc
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "670B - Game of Robots", "CodeForces\670B - Game of Robots\670B - Game of Robots.vcxproj", "{30AF625E-54CB-4562-AECE-B4A2410C79C4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common Problems", "Common Problems", "{73BD1615-631B-46ED-AC74-DAB4D305D0FD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InversionCount", "Common Problems\InversionCount\InversionCount.vcxproj", "{8858A001-1E9E-4AF3-AFD9-6F639F6243CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +95,16 @@ Global
 		{30AF625E-54CB-4562-AECE-B4A2410C79C4}.Release|x64.Build.0 = Release|x64
 		{30AF625E-54CB-4562-AECE-B4A2410C79C4}.Release|x86.ActiveCfg = Release|Win32
 		{30AF625E-54CB-4562-AECE-B4A2410C79C4}.Release|x86.Build.0 = Release|Win32
+		{8858A001-1E9E-4AF3-AFD9-6F639F6243CC}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{8858A001-1E9E-4AF3-AFD9-6F639F6243CC}.Debug|x64.ActiveCfg = Debug|x64
+		{8858A001-1E9E-4AF3-AFD9-6F639F6243CC}.Debug|x64.Build.0 = Debug|x64
+		{8858A001-1E9E-4AF3-AFD9-6F639F6243CC}.Debug|x86.ActiveCfg = Debug|Win32
+		{8858A001-1E9E-4AF3-AFD9-6F639F6243CC}.Debug|x86.Build.0 = Debug|Win32
+		{8858A001-1E9E-4AF3-AFD9-6F639F6243CC}.Release|Any CPU.ActiveCfg = Release|Win32
+		{8858A001-1E9E-4AF3-AFD9-6F639F6243CC}.Release|x64.ActiveCfg = Release|x64
+		{8858A001-1E9E-4AF3-AFD9-6F639F6243CC}.Release|x64.Build.0 = Release|x64
+		{8858A001-1E9E-4AF3-AFD9-6F639F6243CC}.Release|x86.ActiveCfg = Release|Win32
+		{8858A001-1E9E-4AF3-AFD9-6F639F6243CC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -100,5 +114,6 @@ Global
 		{4C718E28-0765-43A2-B600-21BEEBE4565B} = {77B1656D-B1D8-431E-A9AA-FBBF91DA8768}
 		{BF68FEBB-0F77-4C2D-845D-70BBC105C52C} = {77B1656D-B1D8-431E-A9AA-FBBF91DA8768}
 		{30AF625E-54CB-4562-AECE-B4A2410C79C4} = {77B1656D-B1D8-431E-A9AA-FBBF91DA8768}
+		{8858A001-1E9E-4AF3-AFD9-6F639F6243CC} = {73BD1615-631B-46ED-AC74-DAB4D305D0FD}
 	EndGlobalSection
 EndGlobal
