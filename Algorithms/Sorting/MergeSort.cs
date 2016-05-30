@@ -63,10 +63,10 @@ namespace Algorithms.Sorting
         /// <summary>
         /// Merge sort
         /// Time Complexity: 
-        /// Worst case - O(n^2)
-        /// Best case - O(n)
-        /// Average - O(n^2)
-        /// Auxilary space: O(1)
+        /// Worst case - O(n log n)
+        /// Best case - O(n log n)
+        /// Average - O(n log n)
+        /// Auxilary space: O(n)
         /// </summary>
         /// <typeparam name="T">Type - must implement IComparable<T></typeparam>
         /// <param name="array">Collection to be sorted</param>
