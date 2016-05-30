@@ -9,7 +9,7 @@ namespace Tests.Sorting
     public class MergeSort
     {
         [TestMethod]
-        public void MergeSorttBasicTest()
+        public void MergeSortBasicTest()
         {
             int[] ints = { 10, 45, 15, 39, 21, 26, 38 };
             int[] copy = ints.Clone() as int[];
