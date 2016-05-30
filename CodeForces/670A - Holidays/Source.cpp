@@ -17,4 +17,5 @@ int main()
 	int max = (noOfWeeks * 2) + (remainder > 2 ? 2 : remainder);
 
 	cout << min << " " << max << endl;
+	return 0;
 }
