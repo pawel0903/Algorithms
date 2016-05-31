@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common Problems", "Common P
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InversionCount", "Common Problems\InversionCount\InversionCount.vcxproj", "{8858A001-1E9E-4AF3-AFD9-6F639F6243CC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SortLinkedList", "Common Problems\SortLinkedList\SortLinkedList.vcxproj", "{C4424DEA-6215-40A2-BDAC-C0C12D4EAB92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,16 @@ Global
 		{8858A001-1E9E-4AF3-AFD9-6F639F6243CC}.Release|x64.Build.0 = Release|x64
 		{8858A001-1E9E-4AF3-AFD9-6F639F6243CC}.Release|x86.ActiveCfg = Release|Win32
 		{8858A001-1E9E-4AF3-AFD9-6F639F6243CC}.Release|x86.Build.0 = Release|Win32
+		{C4424DEA-6215-40A2-BDAC-C0C12D4EAB92}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{C4424DEA-6215-40A2-BDAC-C0C12D4EAB92}.Debug|x64.ActiveCfg = Debug|x64
+		{C4424DEA-6215-40A2-BDAC-C0C12D4EAB92}.Debug|x64.Build.0 = Debug|x64
+		{C4424DEA-6215-40A2-BDAC-C0C12D4EAB92}.Debug|x86.ActiveCfg = Debug|Win32
+		{C4424DEA-6215-40A2-BDAC-C0C12D4EAB92}.Debug|x86.Build.0 = Debug|Win32
+		{C4424DEA-6215-40A2-BDAC-C0C12D4EAB92}.Release|Any CPU.ActiveCfg = Release|Win32
+		{C4424DEA-6215-40A2-BDAC-C0C12D4EAB92}.Release|x64.ActiveCfg = Release|x64
+		{C4424DEA-6215-40A2-BDAC-C0C12D4EAB92}.Release|x64.Build.0 = Release|x64
+		{C4424DEA-6215-40A2-BDAC-C0C12D4EAB92}.Release|x86.ActiveCfg = Release|Win32
+		{C4424DEA-6215-40A2-BDAC-C0C12D4EAB92}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -115,5 +127,6 @@ Global
 		{BF68FEBB-0F77-4C2D-845D-70BBC105C52C} = {77B1656D-B1D8-431E-A9AA-FBBF91DA8768}
 		{30AF625E-54CB-4562-AECE-B4A2410C79C4} = {77B1656D-B1D8-431E-A9AA-FBBF91DA8768}
 		{8858A001-1E9E-4AF3-AFD9-6F639F6243CC} = {73BD1615-631B-46ED-AC74-DAB4D305D0FD}
+		{C4424DEA-6215-40A2-BDAC-C0C12D4EAB92} = {73BD1615-631B-46ED-AC74-DAB4D305D0FD}
 	EndGlobalSection
 EndGlobal
