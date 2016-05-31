@@ -61,7 +61,7 @@
     <Compile Include="Sorting\SelectionSort.cs" />
     <Compile Include="Sorting\BubbleSort.cs" />
     <Compile Include="TestStructures\Item.cs" />
-    <Compile Include="TestItems.cs" />
+    <Compile Include="TestStructures\TestItems.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Algorithms\Algorithms.csproj">
