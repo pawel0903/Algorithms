@@ -26,6 +26,7 @@ namespace Tests.DataStructures
             list.Push(20);
             list.Push(30);
             Assert.AreEqual("{ 30 20 1 10 5 }", list.ToString());
+            Assert.AreEqual(list.Count, 5);
         }
 
         [TestMethod]
@@ -40,6 +41,7 @@ namespace Tests.DataStructures
             list.PushBack(20);
             list.PushBack(30);
             Assert.AreEqual("{ 5 10 1 20 30 }", list.ToString());
+            Assert.AreEqual(list.Count, 5);
         }
 
         [TestMethod]
@@ -61,6 +63,18 @@ namespace Tests.DataStructures
             list.Delete(11);
             list.PushBack(1);
             Assert.AreEqual("{ 5 10 5 1 }", list.ToString());
+            Assert.AreEqual(list.Count, 4);
+        }
+
+        [TestMethod]
+        public void ReverseTest()
+        {
+            LinkedList<int> list = new LinkedList<int>();
+            list.PushBack(5);
+            list.PushBack(10);
+            list.PushBack(15);
+            list.Reverse();
+            Assert.AreEqual("{ 15 10 5 }", list.ToString());
         }
     }
 }

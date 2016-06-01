@@ -37,6 +37,11 @@ namespace Algorithms.DataStructures
             }
         }
 
+        /// <summary>
+        /// Counts number of items in list
+        /// </summary>
+        public int Count { get; private set; }
+
         private Node _head;
         private Node _tail;
 
@@ -44,6 +49,7 @@ namespace Algorithms.DataStructures
         {
             _head = null;
             _tail = null;
+            Count = 0;
         }
 
         /// <summary>
@@ -70,6 +76,7 @@ namespace Algorithms.DataStructures
                         if (current.Next == null)
                             _tail = prev;
                     }
+                    Count--;
                     return;
                 }
                 prev = current;
@@ -90,6 +97,7 @@ namespace Algorithms.DataStructures
             {
                 _tail = _head;
             }
+            Count++;
         }
 
         /// <summary>
@@ -109,6 +117,27 @@ namespace Algorithms.DataStructures
                 _tail.Next = node;
                 _tail = _tail.Next;
             }
+            Count++;
+        }
+
+        public void Reverse()
+        {
+            if (_head == null)
+                return;
+
+            _tail = _head;
+            Node current = _head;
+            Node prev = null;
+
+            while (current != null)
+            {
+                Node next = current.Next;
+                current.Next = prev;
+                prev = current;
+                current = next;
+            }
+
+            _head = prev;
         }
 
         public override string ToString()
@@ -124,21 +153,6 @@ namespace Algorithms.DataStructures
             }
             result.Append("}");
             return result.ToString();
-        }
-
-        /// <summary>
-        /// Insert a new data after the given node element
-        /// </summary>
-        /// <param name="node">element in list</param>
-        /// <param name="newData">data to be added</param>
-        private void InsertAfter(Node node, T newData)
-        {
-            if (node == null)
-            {
-                throw new Exception("NullNodeElement - node element doesn't exist.");
-            }
-            Node newNode = new Node(newData, node.Next);
-            node.Next = newNode;
         }
     }
 }
