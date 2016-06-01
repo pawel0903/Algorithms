@@ -122,6 +122,7 @@ namespace Algorithms.DataStructures
 
         /// <summary>
         /// Reverse a link list
+        /// Time complexity O(n)
         /// </summary>
         public void Reverse()
         {
@@ -141,6 +142,37 @@ namespace Algorithms.DataStructures
             }
 
             _head = prev;
+        }
+
+        /// <summary>
+        /// Rotates the linked list counter-clockwise by k nodes
+        /// Time complexity O(k)
+        /// </summary>
+        /// <param name="k">number of nodes</param>
+        public void Rotate(int k)
+        {
+            if (Count <= 1 || k%Count == 0)
+                return;
+
+            k %= Count;
+
+            Node current = _head;
+            Node prev = null;
+            for (int i = 0; i < k; i++)
+            {
+                if (i == k - 1)
+                    prev = current;
+
+                current = current.Next;
+            }
+
+            if (prev != null)
+                prev.Next = null;
+
+            _tail.Next = _head;
+            _head = current;
+            
+            _tail = prev;
         }
 
         public override string ToString()

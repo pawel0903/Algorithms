@@ -67,7 +67,7 @@ namespace Tests.DataStructures
         }
 
         [TestMethod]
-        public void ReverseTest()
+        public void LinkedListReverseTest()
         {
             LinkedList<int> list = new LinkedList<int>();
             list.PushBack(5);
@@ -75,6 +75,29 @@ namespace Tests.DataStructures
             list.PushBack(15);
             list.Reverse();
             Assert.AreEqual("{ 15 10 5 }", list.ToString());
+        }
+
+        [TestMethod, Timeout(500)]
+        public void LinkedListRotateTest()
+        {
+            LinkedList<int> list = new LinkedList<int>();
+            list.Rotate(1);
+            list.PushBack(1);
+            list.Rotate(1);
+            Assert.AreEqual("{ 1 }", list.ToString());
+            list.PushBack(2);
+            list.Rotate(3);
+            Assert.AreEqual("{ 2 1 }", list.ToString());
+            list.Rotate(1);
+            Assert.AreEqual("{ 1 2 }", list.ToString());
+            list.PushBack(3);
+            list.PushBack(4);
+            list.PushBack(5);
+            list.PushBack(6);
+            list.Rotate(4);
+            Assert.AreEqual("{ 5 6 1 2 3 4 }", list.ToString());
+            list.Rotate(2000000004);
+            Assert.AreEqual("{ 5 6 1 2 3 4 }", list.ToString());
         }
     }
 }
