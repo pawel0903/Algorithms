@@ -49,6 +49,8 @@
     <Compile Include="Sorting\InsertionSort.cs" />
     <Compile Include="Sorting\BubbleSort.cs" />
     <Compile Include="Sorting\MergeSort.cs" />
+    <Compile Include="Sorting\Partition.cs" />
+    <Compile Include="Sorting\RecursiveQuickSort.cs" />
     <Compile Include="Sorting\SelectionSort.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
