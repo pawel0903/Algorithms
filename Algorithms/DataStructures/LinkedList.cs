@@ -120,6 +120,9 @@ namespace Algorithms.DataStructures
             Count++;
         }
 
+        /// <summary>
+        /// Reverse a link list
+        /// </summary>
         public void Reverse()
         {
             if (_head == null)
