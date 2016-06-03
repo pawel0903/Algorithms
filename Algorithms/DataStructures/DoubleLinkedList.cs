@@ -152,7 +152,7 @@ namespace Algorithms.DataStructures
 
         /// <summary>
         /// Rotates the double linked list counter-clockwise by k nodes
-        /// Time complexity O(k)
+        /// Time complexity O(k%n)
         /// </summary>
         /// <param name="k">number of nodes</param>
         public void Rotate(int k)
