@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SortLinkedList", "Common Pr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SortCircularLinkedList", "Common Problems\SortCircularLinkedList\SortCircularLinkedList.vcxproj", "{F0010A9C-469A-4C5F-B0CE-0E5151E97049}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "670C - Cinema", "CodeForces\670C - Cinema\670C - Cinema.vcxproj", "{BA6989CF-5566-4509-A715-B944B387E980}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,16 @@ Global
 		{F0010A9C-469A-4C5F-B0CE-0E5151E97049}.Release|x64.Build.0 = Release|x64
 		{F0010A9C-469A-4C5F-B0CE-0E5151E97049}.Release|x86.ActiveCfg = Release|Win32
 		{F0010A9C-469A-4C5F-B0CE-0E5151E97049}.Release|x86.Build.0 = Release|Win32
+		{BA6989CF-5566-4509-A715-B944B387E980}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{BA6989CF-5566-4509-A715-B944B387E980}.Debug|x64.ActiveCfg = Debug|x64
+		{BA6989CF-5566-4509-A715-B944B387E980}.Debug|x64.Build.0 = Debug|x64
+		{BA6989CF-5566-4509-A715-B944B387E980}.Debug|x86.ActiveCfg = Debug|Win32
+		{BA6989CF-5566-4509-A715-B944B387E980}.Debug|x86.Build.0 = Debug|Win32
+		{BA6989CF-5566-4509-A715-B944B387E980}.Release|Any CPU.ActiveCfg = Release|Win32
+		{BA6989CF-5566-4509-A715-B944B387E980}.Release|x64.ActiveCfg = Release|x64
+		{BA6989CF-5566-4509-A715-B944B387E980}.Release|x64.Build.0 = Release|x64
+		{BA6989CF-5566-4509-A715-B944B387E980}.Release|x86.ActiveCfg = Release|Win32
+		{BA6989CF-5566-4509-A715-B944B387E980}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -141,5 +153,6 @@ Global
 		{8858A001-1E9E-4AF3-AFD9-6F639F6243CC} = {73BD1615-631B-46ED-AC74-DAB4D305D0FD}
 		{C4424DEA-6215-40A2-BDAC-C0C12D4EAB92} = {73BD1615-631B-46ED-AC74-DAB4D305D0FD}
 		{F0010A9C-469A-4C5F-B0CE-0E5151E97049} = {73BD1615-631B-46ED-AC74-DAB4D305D0FD}
+		{BA6989CF-5566-4509-A715-B944B387E980} = {77B1656D-B1D8-431E-A9AA-FBBF91DA8768}
 	EndGlobalSection
 EndGlobal
