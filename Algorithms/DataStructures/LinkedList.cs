@@ -20,15 +20,10 @@ namespace Algorithms.DataStructures
             public T Data { get; set; }
             public Node Next { get; set; }
 
-            public Node(T data, Node next)
+            public Node(T data, Node next = null)
             {
                 this.Data = data;
                 this.Next = next;
-            }
-
-            public Node(T data) : this(data, null)
-            {
-
             }
 
             public override string ToString()
