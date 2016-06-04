@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Algorithms.Sorting;
+using static Tests.Sorting.Common.Tests;
 
 namespace Tests.Sorting
 {
@@ -9,17 +10,6 @@ namespace Tests.Sorting
     public class MergeSort
     {
         [TestMethod]
-        public void MergeSortBasicTest()
-        {
-            int[] ints = { 10, 45, 15, 39, 21, 26, 38 };
-            int[] copy = ints.Clone() as int[];
-            ints.MergeSort();
-            Array.Sort(copy);
-
-            for (int i = 0; i < ints.Length; i++)
-            {
-                Assert.AreEqual(ints[i], copy[i]);
-            }
-        }
+        public void MergeSortBasicTest() => BasicSortingTest(Algorithms.Sorting.Sorting.MergeSort);
     }
 }
