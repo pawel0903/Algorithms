@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SortCircularLinkedList", "C
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "670C - Cinema", "CodeForces\670C - Cinema\670C - Cinema.vcxproj", "{BA6989CF-5566-4509-A715-B944B387E980}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "652A - Gabriel and Caterpillar", "CodeForces\652A - Gabriel and Caterpillar\652A - Gabriel and Caterpillar.vcxproj", "{F138563F-38EC-40CC-8888-DB673C40CD0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,16 @@ Global
 		{BA6989CF-5566-4509-A715-B944B387E980}.Release|x64.Build.0 = Release|x64
 		{BA6989CF-5566-4509-A715-B944B387E980}.Release|x86.ActiveCfg = Release|Win32
 		{BA6989CF-5566-4509-A715-B944B387E980}.Release|x86.Build.0 = Release|Win32
+		{F138563F-38EC-40CC-8888-DB673C40CD0A}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{F138563F-38EC-40CC-8888-DB673C40CD0A}.Debug|x64.ActiveCfg = Debug|x64
+		{F138563F-38EC-40CC-8888-DB673C40CD0A}.Debug|x64.Build.0 = Debug|x64
+		{F138563F-38EC-40CC-8888-DB673C40CD0A}.Debug|x86.ActiveCfg = Debug|Win32
+		{F138563F-38EC-40CC-8888-DB673C40CD0A}.Debug|x86.Build.0 = Debug|Win32
+		{F138563F-38EC-40CC-8888-DB673C40CD0A}.Release|Any CPU.ActiveCfg = Release|Win32
+		{F138563F-38EC-40CC-8888-DB673C40CD0A}.Release|x64.ActiveCfg = Release|x64
+		{F138563F-38EC-40CC-8888-DB673C40CD0A}.Release|x64.Build.0 = Release|x64
+		{F138563F-38EC-40CC-8888-DB673C40CD0A}.Release|x86.ActiveCfg = Release|Win32
+		{F138563F-38EC-40CC-8888-DB673C40CD0A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -154,5 +166,6 @@ Global
 		{C4424DEA-6215-40A2-BDAC-C0C12D4EAB92} = {73BD1615-631B-46ED-AC74-DAB4D305D0FD}
 		{F0010A9C-469A-4C5F-B0CE-0E5151E97049} = {73BD1615-631B-46ED-AC74-DAB4D305D0FD}
 		{BA6989CF-5566-4509-A715-B944B387E980} = {77B1656D-B1D8-431E-A9AA-FBBF91DA8768}
+		{F138563F-38EC-40CC-8888-DB673C40CD0A} = {77B1656D-B1D8-431E-A9AA-FBBF91DA8768}
 	EndGlobalSection
 EndGlobal
