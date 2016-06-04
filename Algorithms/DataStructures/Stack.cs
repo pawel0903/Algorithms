@@ -25,7 +25,7 @@ namespace Algorithms.DataStructures
         /// <returns>true if stack is empty, false otherwise</returns>
         public bool IsEmpty()
         {
-            return _stack.Count > 0 ? false : true;
+            return _stack.Count == 0;
         }
 
         /// <summary>
