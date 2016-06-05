@@ -10,7 +10,7 @@ namespace Algorithms.DataStructures
     /// Generic LinkList implementation
     /// </summary>
     /// <typeparam name="T">Type</typeparam>
-    public class LinkedList<T> where T : IComparable<T>
+    public class LinkedList<T> : IAList<T> where T : IComparable<T>
     {
         /// <summary>
         /// Node class

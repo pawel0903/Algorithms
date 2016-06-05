@@ -11,7 +11,7 @@ namespace Algorithms.DataStructures
     /// Generic DoubleLinkList implementation
     /// </summary>
     /// <typeparam name="T">Type</typeparam>
-    public class DoubleLinkedList<T> where T : IComparable<T>
+    public class DoubleLinkedList<T> : IAList<T> where T : IComparable<T>
     {
         /// <summary>
         /// Node class

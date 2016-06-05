@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Common\Utils.cs" />
     <Compile Include="DataStructures\DoubleLinkedList.cs" />
+    <Compile Include="DataStructures\IAList.cs" />
     <Compile Include="DataStructures\LinkedList.cs" />
     <Compile Include="DataStructures\Stack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
