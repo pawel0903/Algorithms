@@ -33,6 +33,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InfixPostfix", "Common Prob
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "652B - z-sort", "CodeForces\652B - z-sort\652B - z-sort.vcxproj", "{B0CE55F0-8016-4F43-8FE7-268701B1D6F1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BalancedParentheses", "Common Problems\BalancedParentheses\BalancedParentheses.vcxproj", "{3F7599BF-15F8-4F2B-9BF2-DF8D31FCD2ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -177,6 +179,16 @@ Global
 		{B0CE55F0-8016-4F43-8FE7-268701B1D6F1}.Release|x64.Build.0 = Release|x64
 		{B0CE55F0-8016-4F43-8FE7-268701B1D6F1}.Release|x86.ActiveCfg = Release|Win32
 		{B0CE55F0-8016-4F43-8FE7-268701B1D6F1}.Release|x86.Build.0 = Release|Win32
+		{3F7599BF-15F8-4F2B-9BF2-DF8D31FCD2ED}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{3F7599BF-15F8-4F2B-9BF2-DF8D31FCD2ED}.Debug|x64.ActiveCfg = Debug|x64
+		{3F7599BF-15F8-4F2B-9BF2-DF8D31FCD2ED}.Debug|x64.Build.0 = Debug|x64
+		{3F7599BF-15F8-4F2B-9BF2-DF8D31FCD2ED}.Debug|x86.ActiveCfg = Debug|Win32
+		{3F7599BF-15F8-4F2B-9BF2-DF8D31FCD2ED}.Debug|x86.Build.0 = Debug|Win32
+		{3F7599BF-15F8-4F2B-9BF2-DF8D31FCD2ED}.Release|Any CPU.ActiveCfg = Release|Win32
+		{3F7599BF-15F8-4F2B-9BF2-DF8D31FCD2ED}.Release|x64.ActiveCfg = Release|x64
+		{3F7599BF-15F8-4F2B-9BF2-DF8D31FCD2ED}.Release|x64.Build.0 = Release|x64
+		{3F7599BF-15F8-4F2B-9BF2-DF8D31FCD2ED}.Release|x86.ActiveCfg = Release|Win32
+		{3F7599BF-15F8-4F2B-9BF2-DF8D31FCD2ED}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -193,5 +205,6 @@ Global
 		{F138563F-38EC-40CC-8888-DB673C40CD0A} = {77B1656D-B1D8-431E-A9AA-FBBF91DA8768}
 		{3BD0D740-40ED-4468-82A9-7E60A59ECE19} = {73BD1615-631B-46ED-AC74-DAB4D305D0FD}
 		{B0CE55F0-8016-4F43-8FE7-268701B1D6F1} = {77B1656D-B1D8-431E-A9AA-FBBF91DA8768}
+		{3F7599BF-15F8-4F2B-9BF2-DF8D31FCD2ED} = {73BD1615-631B-46ED-AC74-DAB4D305D0FD}
 	EndGlobalSection
 EndGlobal
