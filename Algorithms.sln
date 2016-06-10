@@ -39,6 +39,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NextGreaterElement", "Commo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StockSpanProblem", "Common Problems\StockSpanProblem\StockSpanProblem.vcxproj", "{9F766BF6-8FF2-480F-B5AB-71E6F6DABC5C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FirstCircularTour", "Common Problems\FirstCircularTour\FirstCircularTour.vcxproj", "{6ABF42E7-BE27-441F-8925-8BDE5246BD15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -213,6 +215,16 @@ Global
 		{9F766BF6-8FF2-480F-B5AB-71E6F6DABC5C}.Release|x64.Build.0 = Release|x64
 		{9F766BF6-8FF2-480F-B5AB-71E6F6DABC5C}.Release|x86.ActiveCfg = Release|Win32
 		{9F766BF6-8FF2-480F-B5AB-71E6F6DABC5C}.Release|x86.Build.0 = Release|Win32
+		{6ABF42E7-BE27-441F-8925-8BDE5246BD15}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{6ABF42E7-BE27-441F-8925-8BDE5246BD15}.Debug|x64.ActiveCfg = Debug|x64
+		{6ABF42E7-BE27-441F-8925-8BDE5246BD15}.Debug|x64.Build.0 = Debug|x64
+		{6ABF42E7-BE27-441F-8925-8BDE5246BD15}.Debug|x86.ActiveCfg = Debug|Win32
+		{6ABF42E7-BE27-441F-8925-8BDE5246BD15}.Debug|x86.Build.0 = Debug|Win32
+		{6ABF42E7-BE27-441F-8925-8BDE5246BD15}.Release|Any CPU.ActiveCfg = Release|Win32
+		{6ABF42E7-BE27-441F-8925-8BDE5246BD15}.Release|x64.ActiveCfg = Release|x64
+		{6ABF42E7-BE27-441F-8925-8BDE5246BD15}.Release|x64.Build.0 = Release|x64
+		{6ABF42E7-BE27-441F-8925-8BDE5246BD15}.Release|x86.ActiveCfg = Release|Win32
+		{6ABF42E7-BE27-441F-8925-8BDE5246BD15}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -232,5 +244,6 @@ Global
 		{3F7599BF-15F8-4F2B-9BF2-DF8D31FCD2ED} = {73BD1615-631B-46ED-AC74-DAB4D305D0FD}
 		{4A839CEC-4B04-403F-AC10-2E23F2E43A4A} = {73BD1615-631B-46ED-AC74-DAB4D305D0FD}
 		{9F766BF6-8FF2-480F-B5AB-71E6F6DABC5C} = {73BD1615-631B-46ED-AC74-DAB4D305D0FD}
+		{6ABF42E7-BE27-441F-8925-8BDE5246BD15} = {73BD1615-631B-46ED-AC74-DAB4D305D0FD}
 	EndGlobalSection
 EndGlobal
