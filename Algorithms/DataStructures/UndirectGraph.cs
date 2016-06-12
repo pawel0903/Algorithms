@@ -14,6 +14,9 @@ namespace Algorithms.DataStructures
     {
         private readonly Dictionary<T, List<T>> _graph;
 
+        public int CountEdges => (from e in _graph.Values select e.Count).Sum() / 2;
+        public int CountVertices => _graph.Keys.Count;
+
         public UndirectGraph()
         {
             _graph = new Dictionary<T, List<T>>();
@@ -22,8 +25,8 @@ namespace Algorithms.DataStructures
         /// <summary>
         /// Adds an edge to a graph
         /// </summary>
-        /// <param name="src">source</param>
-        /// <param name="dest">destination</param>
+        /// <param name="src">first vertex</param>
+        /// <param name="dest">second vertex</param>
         public void AddEdge(T src, T dest)
         {
             Add(src, dest);
@@ -41,7 +44,41 @@ namespace Algorithms.DataStructures
         }
 
         /// <summary>
+        /// Deletes vertex from graph
+        /// If doesnt exist does nothing
+        /// </summary>
+        /// <param name="src">first vertex</param>
+        /// <param name="dest">second vertex</param>
+        public void DeleteEdge(T src, T dest)
+        {
+            if (_graph.ContainsKey(src) && _graph.ContainsKey(dest))
+            {
+                _graph[src].Remove(dest);
+                _graph[dest].Remove(src);
+            }
+        }
+
+        /// <summary>
+        /// Deletes vertex from graph
+        /// If vertex doesnt exist does nothing
+        /// </summary>
+        /// <param name="vertex">vertex to be deleted</param>
+        public void DeleteVertex(T vertex)
+        {
+            if (_graph.ContainsKey(vertex))
+            {
+                foreach (var neighbour in _graph[vertex].ToList())
+                {
+                    _graph[neighbour].Remove(vertex);
+                }
+
+                _graph.Remove(vertex);
+            }
+        }
+
+        /// <summary>
         /// Adds an edge to a graph
+        /// If vertices don't exists cretes them
         /// </summary>
         /// <param name="src">source</param>
         /// <param name="dest">destination</param>
