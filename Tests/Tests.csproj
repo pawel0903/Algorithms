@@ -58,6 +58,7 @@
     <Compile Include="DataStructures\Queue.cs" />
     <Compile Include="DataStructures\UndirectGraph.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Searching\Common\Tests.cs" />
     <Compile Include="Searching\LinearSearch.cs" />
     <Compile Include="Searching\IterativeBinarySearch.cs" />
     <Compile Include="Searching\RecursiveBinarySearch.cs" />

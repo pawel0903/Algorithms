@@ -2,7 +2,7 @@
 
 namespace Algorithms.Search
 {
-    public static class LinearSearch
+    public static partial class Searching
     {
         /// <summary>
         /// Basic linear search
@@ -12,9 +12,9 @@ namespace Algorithms.Search
         /// <param name="collection">Collection of elements</param>
         /// <param name="value">Value to be found</param>
         /// <returns>If value is present in collection return its location, otherwise return -1</returns>
-        public static int Search<T>(T[] collection, T value) where T : IComparable<T>
+        public static int LinearSearch<T>(T[] collection, T value, int left, int right) where T : IComparable<T>
         {
-            for (int i = 0; i < collection.Length; i++)
+            for (int i = left; i <= right; i++)
             {
                 if (collection[i].CompareTo(value) == 0)
                     return i;

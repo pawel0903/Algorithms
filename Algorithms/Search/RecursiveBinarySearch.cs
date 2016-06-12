@@ -2,7 +2,7 @@
 
 namespace Algorithms.Search
 {
-    public static class RecursiveBinarySearch
+    public static partial class Searching
     {
         /// <summary>
         /// Recursive binary search
@@ -14,7 +14,7 @@ namespace Algorithms.Search
         /// <param name="left">left index</param>
         /// <param name="right">right index</param>
         /// <returns>If value is present in collection return its location, otherwise return -1</returns>
-        public static int Search<T>(T[] collection, T value, int left, int right) where T : IComparable<T>
+        public static int RecursiveBinarySearch<T>(T[] collection, T value, int left, int right) where T : IComparable<T>
         {
             if (left <= right)
             {
@@ -25,9 +25,9 @@ namespace Algorithms.Search
                     return middle;
 
                 if (compareResult > 0)
-                    return Search(collection, value, left, middle - 1);
+                    return RecursiveBinarySearch(collection, value, left, middle - 1);
                 else
-                    return Search(collection, value, middle + 1, right);
+                    return RecursiveBinarySearch(collection, value, middle + 1, right);
             }
 
             return -1;

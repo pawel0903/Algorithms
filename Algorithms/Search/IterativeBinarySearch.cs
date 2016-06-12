@@ -2,7 +2,7 @@
 
 namespace Algorithms.Search
 {
-    public static class IterativeBinarySearch
+    public static partial class Searching
     {
         /// <summary>
         /// Iterative binary search
@@ -14,7 +14,7 @@ namespace Algorithms.Search
         /// <param name="left">left index</param>
         /// <param name="right">right index</param>
         /// <returns>If value is present in collection return its location, otherwise return -1</returns>
-        public static int Search<T>(T[] collection, T value, int left, int right) where T : IComparable<T>
+        public static int IterativeBinarySearch<T>(T[] collection, T value, int left, int right) where T : IComparable<T>
         {
             while (left <= right)
             {
