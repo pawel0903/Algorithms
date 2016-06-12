@@ -14,7 +14,13 @@ namespace Algorithms.DataStructures
     {
         private readonly Dictionary<T, List<T>> _graph;
 
+        /// <summary>
+        /// Counts number of edges in undirect graph
+        /// </summary>
         public int CountEdges => (from e in _graph.Values select e.Count).Sum() / 2;
+        /// <summary>
+        /// Counts number of vertices in undirect graph
+        /// </summary>
         public int CountVertices => _graph.Keys.Count;
 
         public UndirectGraph()
