@@ -10,7 +10,7 @@ namespace Algorithms.DataStructures
     /// Undirect Graph implementation using adjacent list
     /// </summary>
     /// <typeparam name="T">Type</typeparam>
-    public class UndirectGraph<T>
+    public class UndirectGraph<T> : IGraph<T>
     {
         private readonly Dictionary<T, List<T>> _graph;
 
