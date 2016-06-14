@@ -37,9 +37,7 @@ namespace Algorithms.Graphs
                 foreach (var neighbour in neighbours)
                 {
                     if (!visited.Contains(neighbour))
-                    {
                         queue.Enqueue(neighbour);
-                    }
                 }
             }
 
