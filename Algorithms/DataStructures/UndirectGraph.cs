@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Algorithms.DataStructures;
 
 namespace Algorithms.DataStructures
 {
@@ -12,20 +13,21 @@ namespace Algorithms.DataStructures
     /// <typeparam name="T">Type</typeparam>
     public class UndirectGraph<T> : IGraph<T>
     {
-        private readonly Dictionary<T, List<T>> _graph;
+        private readonly DirectedGraph<T> _graph;
 
         /// <summary>
         /// Counts number of edges in undirect graph
         /// </summary>
-        public int CountEdges => (from e in _graph.Values select e.Count).Sum() / 2;
+        public int CountEdges => _graph.CountEdges / 2;
+
         /// <summary>
         /// Counts number of vertices in undirect graph
         /// </summary>
-        public int CountVertices => _graph.Keys.Count;
+        public int CountVertices => _graph.CountVertices;
 
         public UndirectGraph()
         {
-            _graph = new Dictionary<T, List<T>>();
+            _graph = new DirectedGraph<T>();
         }
 
         /// <summary>
@@ -35,8 +37,8 @@ namespace Algorithms.DataStructures
         /// <param name="dest">second vertex</param>
         public void AddEdge(T src, T dest)
         {
-            Add(src, dest);
-            Add(dest, src);
+            _graph.AddEdge(src, dest);
+            _graph.AddEdge(dest, src);
         }
 
         /// <summary>
@@ -46,7 +48,7 @@ namespace Algorithms.DataStructures
         /// <param name="vertex">vertex to be added to graph</param>
         public void AddVertex(T vertex)
         {
-            CheckExistAndAdd(vertex);
+            _graph.AddVertex(vertex);
         }
 
         /// <summary>
@@ -57,11 +59,8 @@ namespace Algorithms.DataStructures
         /// <param name="dest">second vertex</param>
         public void DeleteEdge(T src, T dest)
         {
-            if (_graph.ContainsKey(src) && _graph.ContainsKey(dest))
-            {
-                _graph[src].Remove(dest);
-                _graph[dest].Remove(src);
-            }
+            _graph.DeleteEdge(src, dest);
+            _graph.DeleteEdge(dest, src);
         }
 
         /// <summary>
@@ -71,62 +70,12 @@ namespace Algorithms.DataStructures
         /// <param name="vertex">vertex to be deleted</param>
         public void DeleteVertex(T vertex)
         {
-            if (_graph.ContainsKey(vertex))
-            {
-                foreach (var neighbour in _graph[vertex].ToList())
-                {
-                    _graph[neighbour].Remove(vertex);
-                }
-
-                _graph.Remove(vertex);
-            }
-        }
-
-        /// <summary>
-        /// Adds an edge to a graph
-        /// If vertices don't exists cretes them
-        /// </summary>
-        /// <param name="src">source</param>
-        /// <param name="dest">destination</param>
-        private void Add(T src, T dest)
-        {
-            CheckExistAndAdd(src);
-
-            foreach (var neighbour in _graph[src])
-            {
-                if (neighbour.Equals(dest))
-                    return;
-            }
-
-            _graph[src].Add(dest);
-        }
-
-        /// <summary>
-        /// Checks if vertex exist in graph
-        /// If yes does nothing, otherwise adds a key to a graph
-        /// </summary>
-        /// <param name="key"></param>
-        private void CheckExistAndAdd(T key)
-        {
-            if (!_graph.ContainsKey(key))
-                _graph.Add(key, new List<T>());
+            _graph.DeleteVertex(vertex);
         }
 
         public override string ToString()
         {
-            StringBuilder result = new StringBuilder();
-
-            foreach (var vertex in _graph.Keys)
-            {
-                result.Append(vertex);
-                foreach (var neighbour in _graph[vertex])
-                {
-                    result.Append(" -> ").Append(neighbour);
-                }
-                result.Append(Environment.NewLine);
-            }
-
-            return result.ToString();
+            return _graph.ToString();
         }
     }
 }
