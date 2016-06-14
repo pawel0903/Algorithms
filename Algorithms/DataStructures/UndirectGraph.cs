@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -72,6 +73,14 @@ namespace Algorithms.DataStructures
         {
             _graph.DeleteVertex(vertex);
         }
+
+        /// <summary>
+        /// Return vertex neighbours as list
+        /// If vertex doesn't exist return null
+        /// </summary>
+        /// <param name="vertex">vertex</param>
+        /// <returns>Neighbours of given vertex</returns>
+        public List<T> GetNeighbours(T vertex) => _graph.GetNeighbours(vertex);
 
         public override string ToString()
         {

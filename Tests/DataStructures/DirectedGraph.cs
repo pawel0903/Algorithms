@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Algorithms.DataStructures;
 
@@ -81,6 +82,22 @@ namespace Tests.DataStructures
             Assert.AreEqual(t, graph.ToString());
             Assert.AreEqual(0, graph.CountEdges);
             Assert.AreEqual(4, graph.CountVertices);
+        }
+
+        [TestMethod]
+        public void DirectedGraphGetNeighboursTest()
+        {
+            IGraph<int> graph = new DirectedGraph<int>();
+            graph.AddEdge(0, 1);
+            graph.AddEdge(2, 0);
+            graph.AddEdge(3, 2);
+
+            Assert.AreEqual(1, graph.GetNeighbours(0)[0]);
+
+            graph.AddEdge(0, 3);
+            Assert.AreEqual(2, graph.GetNeighbours(0).Count);
+
+            Assert.AreEqual(null, graph.GetNeighbours(5));
         }
     }
 }

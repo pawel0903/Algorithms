@@ -80,5 +80,24 @@ namespace Tests.DataStructures
             Assert.AreEqual(0, graph.CountEdges);
             Assert.AreEqual(4, graph.CountVertices);
         }
+
+        [TestMethod]
+        public void UndirectGraphGetNeighboursTest()
+        {
+            IGraph<int> graph = new UndirectGraph<int>();
+            graph.AddEdge(0, 1);
+            graph.AddEdge(2, 0);
+            graph.AddEdge(3, 2);
+
+            Assert.AreEqual(1, graph.GetNeighbours(0)[0]);
+            Assert.AreEqual(2, graph.GetNeighbours(0)[1]);
+
+            Assert.AreEqual(2, graph.GetNeighbours(0).Count);
+
+            graph.AddEdge(0, 3);
+            Assert.AreEqual(3, graph.GetNeighbours(0).Count);
+
+            Assert.AreEqual(null, graph.GetNeighbours(5));
+        }
     }
 }
