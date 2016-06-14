@@ -10,9 +10,9 @@ namespace Algorithms.DataStructures
     /// Generic Stack implementation
     /// </summary>
     /// <typeparam name="T">Type</typeparam>
-    public class Stack<T> where T : IComparable<T>
+    public class Stack<T>
     {
-        private List<T> _stack;
+        private readonly List<T> _stack;
 
         public Stack()
         {
