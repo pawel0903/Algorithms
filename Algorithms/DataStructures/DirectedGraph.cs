@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Algorithms.DataStructures
 {
     /// <summary>
-    /// Undirect Graph implementation using adjacent list
+    /// Directed Graph implementation using adjacent list
     /// </summary>
     /// <typeparam name="T">Type</typeparam>
     public class DirectedGraph<T> : IGraph<T>
