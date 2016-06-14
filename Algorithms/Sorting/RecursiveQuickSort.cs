@@ -7,8 +7,10 @@ namespace Algorithms.Sorting
         /// <summary>
         /// Core of recursive Quicksort algorithm - uses Hoare partition
         /// </summary>
-        /// <typeparam name="T">Type - must implement IComparable<T></typeparam>
+        /// <typeparam name="T">Type</typeparam>
         /// <param name="array">Collection to be sorted</param>
+        /// <param name="lo">left index</param>
+        /// <param name="hi">right index</param>
         private static void RecursiveQuickSort<T>(T[] array, int lo, int hi) where T : IComparable<T>
         {
             if (lo < hi)
@@ -29,7 +31,7 @@ namespace Algorithms.Sorting
         /// Average - O(n log n)
         /// Auxilary space: O(n)
         /// </summary>
-        /// <typeparam name="T">Type - must implement IComparable<T></typeparam>
+        /// <typeparam name="T">Type</typeparam>
         /// <param name="array">Collection to be sorted</param>
         public static void RecursiveQuickSort<T>(this T[] array) where T : IComparable<T>
         {

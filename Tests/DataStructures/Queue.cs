@@ -28,8 +28,9 @@ namespace Tests.DataStructures
                 queue.Dequeue();
                 Assert.Fail();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                Assert.AreEqual("Queue is empty. Cannot Dequeue.", ex.Message);
             }
         }
     }

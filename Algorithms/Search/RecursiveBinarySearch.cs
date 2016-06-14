@@ -8,7 +8,7 @@ namespace Algorithms.Search
         /// Recursive binary search
         /// Time complexity = O(logn)
         /// </summary>
-        /// <typeparam name="T">Type - must implement IComparable<T></typeparam>
+        /// <typeparam name="T">Type</typeparam>
         /// <param name="collection">Collection of elements</param>
         /// <param name="value">Value to be found</param>
         /// <param name="left">left index</param>

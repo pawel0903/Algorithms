@@ -2,7 +2,7 @@
 
 namespace Algorithms.DataStructures
 {
-    public interface IAList<T> where T : IComparable<T>
+    public interface IAList<in T> where T : IComparable<T>
     {
         int Count { get; }
 

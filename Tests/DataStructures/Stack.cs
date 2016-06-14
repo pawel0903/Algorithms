@@ -24,8 +24,9 @@ namespace Tests.DataStructures
                 stack.Peek();
                 Assert.Fail();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                Assert.AreEqual("Stack is empty!", ex.Message);
             }
             stack.Push(11);
             Assert.AreEqual(stack.IsEmpty(), false);

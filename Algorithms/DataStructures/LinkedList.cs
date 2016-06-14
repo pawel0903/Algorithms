@@ -19,8 +19,8 @@ namespace Algorithms.DataStructures
 
             public Node(T data, Node next = null)
             {
-                this.Data = data;
-                this.Next = next;
+                Data = data;
+                Next = next;
             }
 
             public override string ToString() => Data.ToString();
@@ -172,7 +172,7 @@ namespace Algorithms.DataStructures
             result.Append("{ ");
             while (current != null)
             {
-                result.Append(current.ToString() + " ");
+                result.Append(current).Append(" ");
                 current = current.Next;
             }
             result.Append("}");

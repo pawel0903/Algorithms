@@ -13,7 +13,7 @@ namespace Algorithms.Sorting
         /// Average - O(n^2)
         /// Auxilary space: O(1)
         /// </summary>
-        /// <typeparam name="T">Type - must implement IComparable<T></typeparam>
+        /// <typeparam name="T">Type</typeparam>
         /// <param name="array">Collection to be sorted</param>
         public static void BubbleSort<T>(this T[] array) where T : IComparable<T>
         {

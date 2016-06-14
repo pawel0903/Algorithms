@@ -5,7 +5,7 @@ namespace Tests.TestStructures
     /// <summary>
     /// Basic item class used for time complexity test
     /// </summary>
-    /// <typeparam name="T">Type - must implement IComparable<T></typeparam>
+    /// <typeparam name="T">Type</typeparam>
     public class Item<T> : IComparable<Item<T>> where T : IComparable<T>
     {
         private T _value;
@@ -21,7 +21,7 @@ namespace Tests.TestStructures
             }
             set
             {
-                this._value = value;
+                _value = value;
             }
         }
         /// <summary>
@@ -35,12 +35,12 @@ namespace Tests.TestStructures
         /// <param name="value">initial Value parameter</param>
         public Item(T value)
         {
-            this.Value = value;
+            Value = value;
         }
 
         public int CompareTo(Item<T> other)
         {
-            return this.Value.CompareTo(other.Value);
+            return Value.CompareTo(other.Value);
         }
 
         /// <summary>

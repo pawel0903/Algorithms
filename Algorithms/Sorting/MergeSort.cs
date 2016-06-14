@@ -8,7 +8,7 @@ namespace Algorithms.Sorting
         /// <summary>
         /// Merge function
         /// </summary>
-        /// <typeparam name="T">Type - must implement IComparable<T></typeparam>
+        /// <typeparam name="T">Type</typeparam>
         /// <param name="array">Collection</param>
         /// <param name="l">left index</param>
         /// <param name="m">middle index</param>
@@ -41,7 +41,7 @@ namespace Algorithms.Sorting
         /// <summary>
         /// Core of MergeSort algorithm
         /// </summary>
-        /// <typeparam name="T">Type - must implement IComparable<T></typeparam>
+        /// <typeparam name="T">Type</typeparam>
         /// <param name="array">Collection</param>
         /// <param name="l">left index</param>
         /// <param name="r">right index</param>
@@ -65,7 +65,7 @@ namespace Algorithms.Sorting
         /// Average - O(n log n)
         /// Auxilary space: O(n)
         /// </summary>
-        /// <typeparam name="T">Type - must implement IComparable<T></typeparam>
+        /// <typeparam name="T">Type</typeparam>
         /// <param name="array">Collection to be sorted</param>
         public static void MergeSort<T>(this T[] array) where T : IComparable<T>
         {

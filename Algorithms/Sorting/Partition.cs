@@ -8,7 +8,7 @@ namespace Algorithms.Sorting
         /// <summary>
         /// Lomuto partition - picks hi element as pivot
         /// </summary>
-        /// <typeparam name="T">Type - must implement IComparable<T></typeparam>
+        /// <typeparam name="T">Type</typeparam>
         /// <param name="array">collection of objects</param>
         /// <param name="lo">lower end</param>
         /// <param name="hi">higher end</param>
@@ -34,7 +34,7 @@ namespace Algorithms.Sorting
         /// <summary>
         /// Hoare partition - picks lo as pivot
         /// </summary>
-        /// <typeparam name="T">Type - must implement IComparable<T></typeparam>
+        /// <typeparam name="T">Type</typeparam>
         /// <param name="array">collection of objects</param>
         /// <param name="lo">lower end</param>
         /// <param name="hi">higher end</param>

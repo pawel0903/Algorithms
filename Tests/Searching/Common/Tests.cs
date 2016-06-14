@@ -33,7 +33,7 @@ namespace Tests.Searching.Common
         }
 
         /// <summary>
-        /// Checks if algorithm is <= maxTime time complexity
+        /// Checks if algorithm is less or equal maxTime time complexity
         /// </summary>
         public static void SearchTimeComplexityTest(Func<Item<int>[], Item<int>, int, int, int> search, int n, double maxTime)
         {
