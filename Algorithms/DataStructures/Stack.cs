@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Algorithms.DataStructures
 {
@@ -23,10 +20,7 @@ namespace Algorithms.DataStructures
         /// Checks if stack is empty
         /// </summary>
         /// <returns>true if stack is empty, false otherwise</returns>
-        public bool IsEmpty()
-        {
-            return _stack.Count == 0;
-        }
+        public bool IsEmpty() => _stack.Count == 0;
 
         /// <summary>
         /// Peeks as last element, throws error if stack is empty
@@ -63,9 +57,6 @@ namespace Algorithms.DataStructures
         /// Adds element to stack
         /// </summary>
         /// <param name="item">element</param>
-        public void Push(T item)
-        {
-            _stack.Add(item);
-        }
+        public void Push(T item) => _stack.Add(item);
     }
 }

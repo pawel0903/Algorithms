@@ -1,7 +1,4 @@
-﻿using System;
-using System.Diagnostics;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Algorithms.Sorting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using static Tests.Sorting.Common.Tests;
 
 namespace Tests.Sorting

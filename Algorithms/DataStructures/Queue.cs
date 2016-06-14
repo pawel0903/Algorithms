@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Algorithms.DataStructures
 {
@@ -24,20 +22,14 @@ namespace Algorithms.DataStructures
         /// Time complexity O(1)
         /// </summary>
         /// <returns>true if queue is empty, false otherwise</returns>
-        public bool IsEmpty()
-        {
-            return _queue.Count == 0;
-        }
+        public bool IsEmpty() => _queue.Count == 0;
 
         /// <summary>
         /// Adds an item to the queue.
         /// Time complexity O(1)
         /// </summary>
         /// <param name="item">item to be added</param>
-        public void Enqueue(T item)
-        {
-            _queue.Add(item);
-        }
+        public void Enqueue(T item) => _queue.Add(item);
 
         /// <summary>
         /// Removes an item from the queue. The items are popped in the same order in which they are pushed.

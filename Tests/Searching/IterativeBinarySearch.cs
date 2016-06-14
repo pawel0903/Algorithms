@@ -1,8 +1,5 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.Generic;
-using Tests.TestStructures;
-using static Algorithms.Search.Searching;
 using static Tests.Searching.Common.Tests;
 
 namespace Tests.Searching

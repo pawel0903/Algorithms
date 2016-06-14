@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Algorithms.DataStructures;
 
 namespace Algorithms.Graphs
@@ -31,10 +27,9 @@ namespace Algorithms.Graphs
             {
                 T current = queue.Dequeue();
                 result.Add(current);
-                List<T> neighbours = graph.GetNeighbours(current);
                 visited.Add(current);
 
-                foreach (var neighbour in neighbours)
+                foreach (var neighbour in graph.GetNeighbours(current))
                 {
                     if (!visited.Contains(neighbour))
                         queue.Enqueue(neighbour);

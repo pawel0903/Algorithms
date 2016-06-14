@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Algorithms.DataStructures
 {
@@ -44,10 +43,7 @@ namespace Algorithms.DataStructures
         /// If exists does nothing
         /// </summary>
         /// <param name="vertex">vertex to be added to graph</param>
-        public void AddVertex(T vertex)
-        {
-            CheckExistAndAdd(vertex);
-        }
+        public void AddVertex(T vertex) => CheckExistAndAdd(vertex);
 
         /// <summary>
         /// Deletes vertex from graph

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Algorithms.DataStructures;
+﻿using System.Collections.Generic;
 
 namespace Algorithms.DataStructures
 {
@@ -47,10 +41,7 @@ namespace Algorithms.DataStructures
         /// If exists does nothing
         /// </summary>
         /// <param name="vertex">vertex to be added to graph</param>
-        public void AddVertex(T vertex)
-        {
-            _graph.AddVertex(vertex);
-        }
+        public void AddVertex(T vertex) => _graph.AddVertex(vertex);
 
         /// <summary>
         /// Deletes vertex from graph
@@ -69,10 +60,7 @@ namespace Algorithms.DataStructures
         /// If vertex doesnt exist does nothing
         /// </summary>
         /// <param name="vertex">vertex to be deleted</param>
-        public void DeleteVertex(T vertex)
-        {
-            _graph.DeleteVertex(vertex);
-        }
+        public void DeleteVertex(T vertex) => _graph.DeleteVertex(vertex);
 
         /// <summary>
         /// Return vertex neighbours as list
@@ -82,9 +70,6 @@ namespace Algorithms.DataStructures
         /// <returns>Neighbours of given vertex</returns>
         public List<T> GetNeighbours(T vertex) => _graph.GetNeighbours(vertex);
 
-        public override string ToString()
-        {
-            return _graph.ToString();
-        }
+        public override string ToString() => _graph.ToString();
     }
 }
