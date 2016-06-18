@@ -50,6 +50,7 @@
     <Compile Include="DataStructures\DirectedGraph.cs" />
     <Compile Include="DataStructures\UndirectGraph.cs" />
     <Compile Include="Graphs\BFS.cs" />
+    <Compile Include="Graphs\DetectCycleDirectedGraph.cs" />
     <Compile Include="Graphs\DFS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search\IterativeBinarySearch.cs" />
