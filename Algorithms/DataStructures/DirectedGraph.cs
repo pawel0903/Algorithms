@@ -86,6 +86,12 @@ namespace Algorithms.DataStructures
         public List<T> GetNeighbours(T vertex) => _graph.ContainsKey(vertex) ? _graph[vertex] : null;
 
         /// <summary>
+        /// Returns graph vertices as list
+        /// </summary>
+        /// <returns>vertices</returns>
+        public List<T> GetVertices() => _graph.Keys.ToList();
+
+        /// <summary>
         /// Adds an edge to a graph
         /// If vertices don't exists cretes them
         /// </summary>

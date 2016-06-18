@@ -70,6 +70,12 @@ namespace Algorithms.DataStructures
         /// <returns>Neighbours of given vertex</returns>
         public List<T> GetNeighbours(T vertex) => _graph.GetNeighbours(vertex);
 
+        /// <summary>
+        /// Returns graph vertices as list
+        /// </summary>
+        /// <returns>vertices</returns>
+        public List<T> GetVertices() => _graph.GetVertices();
+
         public override string ToString() => _graph.ToString();
     }
 }

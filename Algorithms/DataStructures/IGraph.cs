@@ -12,5 +12,6 @@ namespace Algorithms.DataStructures
         void DeleteEdge(T src, T dest);
         void DeleteVertex(T vertex);
         List<T> GetNeighbours(T vertex);
+        List<T> GetVertices();
     }
 }
