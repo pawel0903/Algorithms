@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\Utils.cs" />
+    <Compile Include="DataStructures\BinarySearchTree.cs" />
+    <Compile Include="DataStructures\BinaryTreeNode.cs" />
     <Compile Include="DataStructures\DoubleLinkedList.cs" />
     <Compile Include="DataStructures\IAList.cs" />
     <Compile Include="DataStructures\IGraph.cs" />
