@@ -4,6 +4,7 @@ namespace Algorithms.DataStructures
 {
     public class BinarySearchTree<T> where T : IComparable<T>
     {
+        public int Height => GetHeight(Root);
         internal BinaryTreeNode<T> Root { get; private set; }
 
         public BinarySearchTree()
@@ -52,6 +53,14 @@ namespace Algorithms.DataStructures
                 }
             }
             return true;
+        }
+
+        private int GetHeight(BinaryTreeNode<T> current)
+        {
+            if (current == null)
+                return 0;
+
+            return Math.Max(GetHeight(current.Left) + 1, GetHeight(current.Right) + 1);
         }
 
         /// <summary>

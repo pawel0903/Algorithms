@@ -27,5 +27,22 @@ namespace Tests.DataStructures
             // inorder: { 1 3 4 6 7 8 10 13 14 }
             Assert.AreEqual("{ 1 3 4 6 7 8 10 13 14 }", bst.ToString());
         }
+
+        [TestMethod]
+        public void BinarySearchTreeHeightTest()
+        {
+            BinarySearchTree<int> bst = new BinarySearchTree<int>();
+            bst.Insert(8);
+            bst.Insert(3);
+            bst.Insert(10);
+            bst.Insert(1);
+            bst.Insert(6);
+            bst.Insert(14);
+            bst.Insert(4);
+            bst.Insert(7);
+            bst.Insert(13);
+            // https://upload.wikimedia.org/wikipedia/commons/d/da/Binary_search_tree.svg
+            Assert.AreEqual(4, bst.Height);
+        }
     }
 }
