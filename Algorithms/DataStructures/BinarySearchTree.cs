@@ -4,10 +4,7 @@ namespace Algorithms.DataStructures
 {
     public class BinarySearchTree<T> where T : IComparable<T>
     {
-        /// <summary>
-        /// bst root node
-        /// </summary>
-        private BinaryTreeNode<T> _root;
+        internal BinaryTreeNode<T> Root { get; private set; }
 
         public BinarySearchTree()
         {
@@ -21,11 +18,11 @@ namespace Algorithms.DataStructures
         /// <returns>true if successfuly inserted, false if data already existed in tree</returns>
         public bool Insert(T item)
         {
-            if (_root == null)
-                _root = new BinaryTreeNode<T>(item);
+            if (Root == null)
+                Root = new BinaryTreeNode<T>(item);
             else
             {
-                BinaryTreeNode<T> current = _root;
+                BinaryTreeNode<T> current = Root;
                 while (true)
                 {
                     if (current.Data.CompareTo(item) == 0)
@@ -79,7 +76,7 @@ namespace Algorithms.DataStructures
         public override string ToString()
         {
             string result = "{";
-            InOrder(ref result, _root);
+            InOrder(ref result, Root);
             result += " }";
             return result;
         }

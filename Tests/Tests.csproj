@@ -75,6 +75,7 @@
     <Compile Include="Sorting\RecursiveQuickSort.cs" />
     <Compile Include="TestStructures\Item.cs" />
     <Compile Include="TestStructures\TestItems.cs" />
+    <Compile Include="Trees\MorisTreeTraversal.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Algorithms\Algorithms.csproj">
