@@ -32,9 +32,12 @@ namespace Tests.DataStructures
         public void BinarySearchTreeHeightTest()
         {
             BinarySearchTree<int> bst = new BinarySearchTree<int>();
+            Assert.AreEqual(0, bst.Height);
             bst.Insert(8);
+            Assert.AreEqual(1, bst.Height);
             bst.Insert(3);
             bst.Insert(10);
+            Assert.AreEqual(2, bst.Height);
             bst.Insert(1);
             bst.Insert(6);
             bst.Insert(14);
