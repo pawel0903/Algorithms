@@ -32,9 +32,13 @@ namespace Algorithms.DataStructures
                     switch (childType)
                     {
                         case NodeChildType.Left:
+                            if (p.Left != null)
+                                return false;
                             p.Left = new BinaryTreeNode<T>(item);
                             break;
                         case NodeChildType.Right:
+                            if (p.Right != null)
+                                return false;
                             p.Right = new BinaryTreeNode<T>(item);
                             break;
                     }
