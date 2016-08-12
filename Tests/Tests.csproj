@@ -60,6 +60,7 @@
     <Compile Include="DataStructures\UndirectGraph.cs" />
     <Compile Include="DataStructures\BinarySearchTree.cs" />
     <Compile Include="DataStructures\BinaryTree.cs" />
+    <Compile Include="DataStructures\MinHeap.cs" />
     <Compile Include="Graph\DFS.cs" />
     <Compile Include="Graph\BFS.cs" />
     <Compile Include="Graph\DetectCycleDirectedGraph.cs" />
